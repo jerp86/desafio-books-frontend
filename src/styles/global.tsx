@@ -8,6 +8,10 @@ export default createGlobalStyle`
     outline: 0;
   }
 
+  *:focus {
+    outline: 0;
+  }
+
   body {
     background-color: #FFF;
     color: #FFF;
@@ -16,11 +20,19 @@ export default createGlobalStyle`
 
   body, input, button {
     font-family: 'Heebo', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   h1, h2, h3, h4, h5, h6, strong {
     font-weight: 500;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
   }
 
   button {
