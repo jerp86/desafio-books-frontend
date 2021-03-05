@@ -27,6 +27,7 @@
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [
       1,
       {
@@ -47,11 +48,16 @@
         "ts": "never",
         "tsx": "never"
       }
-   ]
+    ],
+    "jsx-a11y/label-has-associated-control": [ "error", {
+      "required": { "some": ["nesting", "name"] }
+    }],
+    "react/require-default-props": "off",
+    "react/prop-types": "off"
   },
-  "settings": {
-    "import/resolver": {
-      "typescript": {}
+    "settings": {
+      "import/resolver": {
+        "typescript": {}
+      }
     }
   }
-}
