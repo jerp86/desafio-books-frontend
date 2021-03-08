@@ -78,10 +78,10 @@ Para copiar o projeto, utilize os comandos:
 
 ```bash
   # Clonar o repositório
-  ❯ git clone https://github.com/Tech-Ninjas-DIOX/front-entenda-direito.git
+  ❯ git clone https://github.com/jerp86/desafio-books-frontend.git
 
   # Entrar no diretório
-  ❯ cd front-entenda-direito
+  ❯ cd desafio-books-frontend
 ```
 Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn ou NPM:
 
@@ -113,9 +113,9 @@ Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn o
 
 - Faça um `Fork` do repositório.
 - Faça um clone do seu respositório gerado do fork:
-  - `❯ git clone https://github.com/SEU_USUARIO/front-entenda-direito`
+  - `❯ git clone https://github.com/SEU_USUARIO/desafio-books-frontend`
 - Antes de começar a trabalhar, adicione um novo remote; pode chamá-lo de *"upstream"*:
-  - `❯ git remote add upstream https://github.com/Tech-Ninjas-DIOX/front-entenda-direito.git`
+  - `❯ git remote add upstream https://github.com/jerp86/desafio-books-frontend.git`
 - Obtenha as alterações mais recentes do upstream para o repositório local:
   - `❯ git pull upstream master`
 - Crie uma branch com sua feature:
