@@ -1,7 +1,18 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import background from '../../assets/backgroundLogin.png';
 import logoImg from '../../assets/logo.svg';
+
+const appearFromLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-3.125rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 export const Container = styled.div`
   background: url(${background}) no-repeat center;
@@ -15,6 +26,8 @@ export const Container = styled.div`
   align-items: flex-start;
   justify-content: center;
   position: relative;
+
+  animation: ${appearFromLeft} 1.5s;
 `;
 
 export const Content = styled.div`
@@ -71,4 +84,6 @@ export const Error = styled.div`
   line-height: 16px;
   width: 240px;
   color: #fff;
+
+  animation: ${appearFromLeft} 1.5s;
 `;

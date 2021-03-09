@@ -1,7 +1,17 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const appearFromLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-3.125rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 export const HeaderContainer = styled.div`
-  /* width: 1130px; */
   width: 70.625rem;
 
   display: flex;
@@ -12,21 +22,19 @@ export const HeaderContainer = styled.div`
   padding: 2.5rem 0;
 
   color: ${props => props.color || '#FFF'};
+  animation: ${appearFromLeft} 1.5s;
 
   @media (max-width: 1180px) {
-    /* width: 840px; */
     width: 52.5rem;
     padding: 2rem 0;
   }
 
   @media (max-width: 900px) {
-    /* width: 560px; */
     width: 35rem;
     padding: 1.5rem 0;
   }
 
   @media (max-width: 600px) {
-    /* width: 280px; */
     width: 17.5rem;
     padding: 1rem 0;
 

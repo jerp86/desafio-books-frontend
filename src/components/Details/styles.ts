@@ -27,9 +27,11 @@ export const Container = styled.div`
   color: #333;
 
   height: 100%;
+  min-height: 100vh;
   width: 100%;
 
-  animation: ${appearFromLeft} 1.5s;
+  overflow: auto;
+  animation: ${appearFromLeft} 1.5s forwards ease-in-out;
 
   @media screen and (max-width: 900px) {
     justify-content: flex-start;
@@ -39,8 +41,6 @@ export const Container = styled.div`
   @media screen and (max-width: 600px) {
     flex-direction: column;
   }
-
-  /* overflow-y: auto; */
 `;
 
 export const CloseIcon = styled(IoMdClose)`
@@ -87,8 +87,6 @@ export const ModalWindow = styled.div`
   width: 48.063rem;
   height: 38rem;
 
-  animation: ${appearFromLeft} 1.5s;
-
   @media screen and (max-width: 900px) {
     width: 85%;
   }
@@ -108,16 +106,9 @@ export const ModalContainer = styled.div`
   box-shadow: 0px 1rem 5rem rgba(0, 0, 0, 0.32);
   border-radius: 0.25rem;
 
-  /* @media screen and (max-width: 900px) {
-    align-items: center;
-    justify-content: center;
-  } */
-
   @media screen and (max-width: 650px) {
     flex-direction: column;
     height: 100%;
-    /* align-items: center;
-    justify-content: center; */
     overflow-y: auto;
   }
 `;
@@ -136,8 +127,6 @@ export const ImageBookContainer = styled.img`
   }
 
   @media screen and (max-width: 650px) {
-    /* height: 80%;
-    padding: 1rem; */
     display: none;
   }
 `;
@@ -155,7 +144,6 @@ export const Content = styled.div`
 
   @media screen and (max-width: 650px) {
     width: 100%;
-    /* max-height: 31.25rem; */
 
     padding: 0.5rem;
   }
@@ -209,7 +197,6 @@ export const InfoRow = styled.div`
 export const Review = styled.div`
   margin-top: 2rem;
   overflow: auto;
-  /* margin-right: -45px; */
 
   &::-webkit-scrollbar {
     width: 4px;
